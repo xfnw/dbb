@@ -1,0 +1,10 @@
+<?php
+
+// servers to federate with
+$peers = array(
+	"https://example.com/submit.php",
+
+);
+
+$banned = array();
+
