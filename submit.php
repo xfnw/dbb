@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 
 include 'config.php';
 
-$postid = md5(implode($_POST));
+$postid = substr(md5(implode($_POST))0,5);
 if( strpos(file_get_contents("./data/received.txt"),$postid) == false) {
 	// do stuff
 
