@@ -1,5 +1,17 @@
 # dbb
-dbb is a distributed forum type thing similar to netnews, but its over http and push based.
+dbb is a distributed/decentralized network for mass-transmitting arbitrary information.
+
+you could theoretically use it for anything, since the message will be forwarded regardless of if
+the message is understood, but this implimentation makes a simple
+bbs/netnews style board that can be posted to anonymously.
+
+## limits
+the size of packets is limited by time, not size, so big powerful servers that can handle it can allow large
+files, but it will not be propogated to smaller servers with less bandwidth. of course there are other
+things that limit post size, like hard limits set by an admisistrator.
+
+the thread field is limited to some 10,000 charactors depending on the filesystem the server is on,
+but this is not part of the protocol
 
 ## threads and catagories
 dbb is organized in thread names, with the format `<catagory>.<thread number>`, eg `biking.1274`
