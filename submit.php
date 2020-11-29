@@ -39,7 +39,7 @@ if( strpos(file_get_contents("./data/received.txt"),$postid) == false) {
 		$nickname = escapeshellarg($_POST['nickname']);
 		$content = str_replace("\r",'',str_replace("==========","\\==========",$_POST['content']));
 
-		file_put_contents('./data/threads/'.$thread.'.txt',"==========\nDate: ".date('c', time())."\nFrom: ".$nickname."\n\n".$content."\n\n\n\n", FILE_APPEND | LOCK_EX);
+		file_put_contents('./data/threads/'.$thread.'.txt',"==========\nId: ".$postid."\nDate: ".date('c', time())."\nFrom: ".$nickname."\n\n".$content."\n\n", FILE_APPEND | LOCK_EX);
 
 		echo "200 OK";
 	}else{
