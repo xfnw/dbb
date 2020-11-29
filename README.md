@@ -13,7 +13,7 @@ using form.html, or with curl:
 curl https://xfnw.ttm.sh/dbb/submit.php -F "thread=test.12" -F "nickname=mr test" -F "content=hello this is a post!"
 ```
 
-most servers allow their archives to be viewed by replacing `submit.php` with `data/threads`, eg `https://xfnw.ttm.sh/dbb/data/threads`
+most servers allow their archives to be viewed by replacing `submit.php` with `data/threads`, eg https://xfnw.ttm.sh/dbb/data/threads
 
 
 ## host your own
